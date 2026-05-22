@@ -2,11 +2,10 @@
 
 Post-install configuration script for **Linux Mint** running on a
 **Minix Z83-4** mini PC, converting a stock desktop install into a
-headless motion-surveillance node that streams to a remote BlueIris
-server.
+headless motion-surveillance node / IPCam.
 
 The goal is to minimise eMMC write amplification (no local video
-storage), forward all logs off-box, and end with a lean, GUI-less
+storage), forward all logs off-box, and end with a lean, headless
 system running motionEye.
 
 ---
@@ -20,7 +19,7 @@ system running motionEye.
 | Storage      | 32 GB internal eMMC                                |
 | WiFi         | Broadcom BCM43455                                  |
 | OS           | Linux Mint (Debian/Ubuntu base)                    |
-| Role         | Headless surveillance — streams to remote BlueIris |
+| Role         | Headless IPC running MotionEye as a front-end      |
 
 ---
 
