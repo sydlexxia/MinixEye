@@ -365,19 +365,22 @@ additional_tweaks() {
     # ── INSERT TWEAKS BELOW ──────────────────────────────────────────────────
 
     # Example: set hostname
+    # ------------------------------------------------
     # debug "Setting hostname to surveillance-node"
     # hostnamectl set-hostname surveillance-node
 
     # Example: disable IPv6
+    # ------------------------------------------------
     # debug "Disabling IPv6 via sysctl"
     # echo "net.ipv6.conf.all.disable_ipv6 = 1" >> /etc/sysctl.conf
     # sysctl -p
 
-    # Disable IPV6, persistant across reboots
-    debug "Disabling IPv6 via sysctl"
-    echo "net.ipv6.conf.all.disable_ipv6 = 1" >> /etc/sysctl.d/99-disable-ipv6.conf
-    echo "net.ipv6.conf.default.disable_ipv6 = 1" >> /etc/sysctl.d/99-disable-ipv6.conf
-    sysctl -p /etc/sysctl.d/99-disable-ipv6.conf
+    # Example: disable IPv6, persistant across reboots
+    # ------------------------------------------------
+    # debug "Disabling IPv6 via sysctl"
+    # echo "net.ipv6.conf.all.disable_ipv6 = 1" >> /etc/sysctl.d/99-disable-ipv6.conf
+    # echo "net.ipv6.conf.default.disable_ipv6 = 1" >> /etc/sysctl.d/99-disable-ipv6.conf
+    # sysctl -p /etc/sysctl.d/99-disable-ipv6.conf
 
     # ── END TWEAKS ───────────────────────────────────────────────────────────
 
