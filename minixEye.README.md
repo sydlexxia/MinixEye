@@ -24,6 +24,17 @@ system running motionEye.
 ---
 
 ## Prerequisites
+-----------------------------------------------------------------------
+
+:warning:  ***IMPORTANT!*** - A BIOS update is required before installing 
+Linux on the Neo Z83-4. Boot into BIOS (press F11 at startup) and note 
+your current BIOS revision and build version — you'll need these to 
+select the correct update file. Download your update here:
+
+   https://theminixforum.com/index.php?forums/neo-z83-4-series.124/
+
+-----------------------------------------------------------------------
+
 
 The script will **refuse to run** unless these are already done:
 
